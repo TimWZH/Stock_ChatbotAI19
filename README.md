@@ -4,11 +4,23 @@
 This is a chatbot that can answer questions on stock price. The chatbot is integrated into Wechat. Users are allowed to send text or audio message to ask questions. 
 To let the chatbot understand your question, you need to specify which company you are asking and what kind of information(current price,historical price, EPS(TTM)).
 
-
+&nbsp;
 ## Demo
 
 
+&nbsp;
+## Project structure
 
+```
+└── StockBot                        
+    ├── StockBot.ipynb         // chatbot
+    ├── training_data.json     // training data for extracting intents and entities
+    ├── config_spacy.yml       // config for trainer
+    ├── city_code.db           // database(all provinces in China with their codes)
+    ├── Report.pdf             // report of this project
+    └── Demo.mp4               // a demo showing an example dialogue
+```
+&nbsp;
 ## How to run
 1. In `main.py`, set configuration with a friend's information 
 ```
@@ -18,7 +30,7 @@ my_friend = bot.friends().search('name' sex= , city="city")[0]
 2. Run `main.py`
 
 
-
+&nbsp;
 ## Requirements
 There are few online packages need to be installed for this project
 ### Rasa-NLU
@@ -64,9 +76,9 @@ pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
 ```
 ***For more installation information***<br>
 Go to https://wxpy.readthedocs.io/zh/latest/#<br>
-<br>
 
 
+&nbsp;
 ## TECHNOLOGY USED
 https://pypi.org/project/iexfinance/  
 
