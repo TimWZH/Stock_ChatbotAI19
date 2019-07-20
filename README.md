@@ -4,16 +4,19 @@
 This is a chatbot that can answer questions on stock price. The chatbot is integrated into Wechat. Users are allowed to send text or audio message to ask questions. 
 To let the chatbot understand your question, you need to specify which company you are asking and what kind of information(current price,historical price, EPS(TTM)).
 
+
 ## Demo
 
 
 
 ## How to run
-1.In `main.py`, set configuration with a friend's information 
+1. In `main.py`, set configuration with a friend's information 
 ```
 my_friend = bot.friends().search('name' sex= , city="city")[0]
 ```
-2. run `main.py`
+
+2. Run `main.py`
+
 
 
 ## Requirements
@@ -30,8 +33,6 @@ When you train your model, Rasa NLU will check if all required dependencies are 
 Go to https://rasa.com/docs/nlu/installation/<br>
 
 ### iexfinance
-***Setting up iexfinance***<br>
-<br>
 **From PyPI with pip (latest stable release):**<br>
 ```
 $ pip3 install iexfinance
@@ -48,7 +49,6 @@ Go to https://github.com/addisonlynch/iexfinance<br>
 <br>
 
 ### wxpy
-***Setting up wxpy***<br>
 wxpy support Python 3.4-3.6, and 2.7 version<br>
 To ensure the package can be installed in different Python version<br>
 Replace `pip` in the commond below to `pip3` or `pip2`<br>
@@ -60,14 +60,12 @@ pip install -U wxpy
 **From douban IO PyPI source (Recommend for users in China mainland):**<br>
 ```
 
-
 pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
 ```
 ***For more installation information***<br>
 Go to https://wxpy.readthedocs.io/zh/latest/#<br>
 <br>
 
-## operating instructions
 
 ## TECHNOLOGY USED
 https://pypi.org/project/iexfinance/  
