@@ -1,27 +1,80 @@
 # Stock_ChatbotAI19
 
-## DESCRIPTION
+## Description
 This is a chatbot that can answer questions on stock price. The chatbot is integrated into Wechat. Users are allowed to send text or audio message to ask questions. 
 To let the chatbot understand your question, you need to specify which company you are asking and what kind of information(current price,historical price, EPS(TTM)).
 
-## DEMO
-Text test and audio test show the results of this product.  
+## Demo
 
-Below is the demo of text test. The user ask question through text.  
 
-![](result2.mp4)   
 
+## How to run
+1.In `main.py`, set configuration with a friend's information 
+```
+my_friend = bot.friends().search('name' sex= , city="city")[0]
+```
+2. run `main.py`
+
+
+## Requirements
+There are few online packages need to be installed for this project
+### Rasa-NLU
+The recommended way to install Rasa NLU is using pip which will install the latest stable version of Rasa NLU:<br>
+```
+pip install rasa_nlu
+```
+Rasa NLU has different components for recognizing intents and entities, most of these will have some additional dependencies.<br>
+When you train your model, Rasa NLU will check if all required dependencies are installed and tell you if any are missing.<br>  
+
+***For more installation information***<br>
+Go to https://rasa.com/docs/nlu/installation/<br>
+
+### iexfinance
+***Setting up iexfinance***<br>
+<br>
+**From PyPI with pip (latest stable release):**<br>
+```
+$ pip3 install iexfinance
+```
+**From development repository (dev version):**<br>
+If you want to use the bleeding edge version you can get it from github:<br>
+```
+$ git clone https://github.com/addisonlynch/iexfinance.git
+$ cd iexfinance
+$ python3 setup.py install
+```
+***For more installation information***<br>
+Go to https://github.com/addisonlynch/iexfinance<br>
+<br>
+
+### wxpy
+***Setting up wxpy***<br>
+wxpy support Python 3.4-3.6, and 2.7 version<br>
+To ensure the package can be installed in different Python version<br>
+Replace `pip` in the commond below to `pip3` or `pip2`<br>
+<br>
+**From PyPI with pip:**<br>
+```
+pip install -U wxpy
+```
+**From douban IO PyPI source (Recommend for users in China mainland):**<br>
+```
+
+
+pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
+```
+***For more installation information***<br>
+Go to https://wxpy.readthedocs.io/zh/latest/#<br>
+<br>
+
+## operating instructions
 
 ## TECHNOLOGY USED
 https://pypi.org/project/iexfinance/  
 
-https://docs.python.org/3/library/re.html  
-
 https://spacy.io/  
 
-https://rasa.com/docs/nlu/  
-
-https://github.com/jiaaro/pydub  
+https://rasa.com/docs/nlu/   
 
 https://github.com/youfou/wxpy  
 
