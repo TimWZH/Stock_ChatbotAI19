@@ -6,19 +6,21 @@ To let the chatbot understand your question, you need to specify which company y
 
 &nbsp;
 ## Demo
-
+![](demo.gif)  
 
 &nbsp;
 ## Project structure
 
 ```
-└── StockBot                        
-    ├── StockBot.ipynb         // chatbot
+└── StockBot    
+    ├── main.py     //  main function
+    ├── chatbot      // chatbot class
     ├── training_data.json     // training data for extracting intents and entities
     ├── config_spacy.yml       // config for trainer
-    ├── city_code.db           // database(all provinces in China with their codes)
-    ├── Report.pdf             // report of this project
-    └── Demo.mp4               // a demo showing an example dialogue
+    ├── states_rules.py           // configuration with state machine and reply rules.
+    ├── STOCK-CHATBOT PROJECT REPROT.pdf             // report of this project
+    ├── demo.gif               // a demo showing an example dialogue
+    └── result2.mp4            // a demo showing an example dialogue    
 ```
 &nbsp;
 ## How to run
