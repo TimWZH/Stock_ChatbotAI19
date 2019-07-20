@@ -12,7 +12,7 @@ To let the chatbot understand your question, you need to specify which company y
 ## Project structure
 
 ```
-└── StockBot    
+└── Stock_ChatbotAI19   
     ├── main.py     //  main function
     ├── chatbot      // chatbot class
     ├── training_data.json     // training data for extracting intents and entities
